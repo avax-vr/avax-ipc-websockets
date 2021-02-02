@@ -46,7 +46,8 @@ Note : it only supports BaseTX currently it's enough for X-Chain transactions (i
 
 ## Example usage on browser
 
-`const ws = new WebSocket('wss://avax-ws.lirax.app:8443'); // can't promise to this server will stay online forever
+```js
+const ws = new WebSocket('wss://avax-ws.lirax.app:8443'); // can't promise to this server will stay online forever
 
 ws.onopen = function(){
    console.log('Websocket started!');
@@ -63,4 +64,4 @@ ws.onerror = function(error){
 ws.onmessage = function(e){
    console.log(JSON.parse(e.data));
 }
-`
+```
