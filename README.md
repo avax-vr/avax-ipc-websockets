@@ -42,3 +42,25 @@ run
 `node index.js`
 
 Note : it only supports BaseTX currently it's enough for X-Chain transactions (i guess), all prs are wellcome.
+
+
+## Example usage on browser
+
+`const ws = new WebSocket('wss://avax-ws.lirax.app:8443'); // can't promise to this server will stay online forever
+
+ws.onopen = function(){
+   console.log('Websocket started!');
+}
+
+ws.onclose = function(){
+   console.log('Websocket closed');
+}
+
+ws.onerror = function(error){
+   console.log('Websocket error: ' + error);
+}
+
+ws.onmessage = function(e){
+   console.log(JSON.parse(e.data));
+}
+`
