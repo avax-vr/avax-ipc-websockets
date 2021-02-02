@@ -15,8 +15,8 @@
     "websocket_listen_port": 8443,
     "ssl_enabled": true,
     "ssl_keys": {
-        "cert": "/root/avaxipcs/cert.pem",
-        "key": "/root/avaxipcs/key.pem"
+        "cert": "./cert.pem",
+        "key": "./key.pem"
     },
     "blockchains": {
         "2oYMBNV4eNHyqk2fjjV5nVQLDbtmNJzq5s3qs3Lo6ftnC6FByM": {
